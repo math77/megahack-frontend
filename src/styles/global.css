@@ -7,3 +7,16 @@
 body, input, textarea {
   font-family: 'Comfortaa', cursive;
 }
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+.logo {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 12vw;
+  z-index: 9999;
+}
