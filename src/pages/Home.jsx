@@ -1,15 +1,20 @@
-import { Button } from '@material-ui/core'
+import { useHistory } from 'react-router-dom'
+import QuestionForm from '../components/QuestionForm'
 
 import '../styles/pages/home.css'
 
 export default function Home() {
+  const history = useHistory()
+
+  function next() {
+    //api
+    //redirect page route
+    history.push('/questions') // or reddiret to page options
+  }
+
   return (
     <div className="home-page">
-      <form>
-        <label htmlFor="search">Como podemos te ajudar hoje?</label>
-        <input type="text" id="search" autoFocus />
-        <Button variant="contained" type="submit">Enviar</Button>
-      </form>
+      <QuestionForm next={next} question="Como podemos te ajudar hoje?" />
     </div>
   )
 }

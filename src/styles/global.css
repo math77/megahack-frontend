@@ -11,6 +11,7 @@ body, input, textarea {
 body {
   position: relative;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .logo {
